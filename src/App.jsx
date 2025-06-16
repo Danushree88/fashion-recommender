@@ -7,6 +7,9 @@ import Recommendations from "./pages/Recommendations";
 import TryOn from "./pages/TryOn";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
+import ProductCategories from "./pages/ProductCategories";
+
+
 
 function App() {
   return (
@@ -21,6 +24,7 @@ function App() {
             <Route path="/tryon" element={<TryOn />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/categories" element={<ProductCategories />} />
           </Routes>
         </div>
         <Footer />

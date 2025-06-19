@@ -1,70 +1,64 @@
 import os
+import json
 from flask import Blueprint, request, jsonify
-from PIL import Image
 import numpy as np
 from sklearn.metrics.pairwise import euclidean_distances
 from collections import defaultdict
-from models.color_analysis import extract_dominant_colors
+
+from models.color_analysis import  is_fallback_color  # Use utilities from your own module if available
 
 recommend_bp = Blueprint('recommend', __name__)  # REGISTER BLUEPRINT
 
 MATCH_THRESHOLD = 10  # Match strictness
 
-@recommend_bp.route('/', methods=['POST'])  # Use base path since /recommend is prefixed in app.py
+
+@recommend_bp.route('/', methods=['POST'])  # POST /recommend
 def recommend():
     data = request.json
     dress_colors = data.get('dress_colors', [])
-    recommendations = recommend_accessories_from_subfolders(dress_colors)
+    
+    recommendations = recommend_accessories_from_precomputed(
+        dress_colors,
+        json_file=os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'models', 'accessory_colors.json'))
+    )
+    
     return jsonify(recommendations)
 
-def recommend_accessories_from_subfolders(dress_colors_rgb, accessory_dir="accessories", top_k=5):
-    base_dir = os.path.join(os.path.dirname(__file__), '..', 'static', 'accessories')
-    base_dir = os.path.abspath(base_dir)
 
-    results = []
+def recommend_accessories_from_precomputed(dress_colors_rgb, json_file, top_k=5):
+    # Load precomputed accessory colors
+    with open(json_file, "r") as f:
+        accessory_data = json.load(f)
+
     dress_rgb = [parse_rgb(c) for c in dress_colors_rgb]
-
     fallback_accessories = []
     exact_matches = []
 
-    for category in os.listdir(base_dir):
-        category_path = os.path.join(base_dir, category)
-        if not os.path.isdir(category_path):
-            continue
+    for accessory in accessory_data:
+        accessory_rgb = [parse_rgb(c) for c in accessory["colors"]]
+        distance = color_distance(dress_rgb, accessory_rgb)
 
-        for filename in os.listdir(category_path):
-            if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
-                image_path = os.path.join(category_path, filename)
+        print(f"Accessory: {accessory['image_path']} | Dominant: {accessory_rgb} | Distance: {distance:.2f}")
 
-                accessory_colors = extract_dominant_colors(image_path)
-                accessory_rgb = [parse_rgb(color) for color in accessory_colors]
+        similarity = max(0, round(100 - (distance / 441.67 * 100), 1))
 
-                distance = color_distance(dress_rgb, accessory_rgb)
+        item = {
+            "image_path": accessory["image_path"],
+            "category": accessory["category"],
+            "score": similarity
+        }
 
-                print(f"Accessory: {filename} | Dominant: {accessory_rgb} | Distance: {distance:.2f}")
+        if any(is_fallback_color(c) for c in accessory_rgb):
+            fallback_accessories.append(item)
 
-                similarity = max(0, round(100 - (distance / 441.67 * 100), 1))
+        if distance <= MATCH_THRESHOLD:
+            exact_matches.append(item)
 
-                accessory_data = {
-                    "image_path": f"static/accessories/{category}/{filename}",
-                    "category": category,
-                    "score": similarity
-                }
-
-                if any(is_fallback_color(c) for c in accessory_rgb):
-                    fallback_accessories.append(accessory_data)
-
-                if distance <= MATCH_THRESHOLD:
-                    exact_matches.append(accessory_data)
-
-    if not exact_matches:
-        print("⚠️ No close match found. Showing fallback (black/white/golden) accessories.")
-        results = fallback_accessories
-    else:
-        results = exact_matches
-
+    results = exact_matches if exact_matches else fallback_accessories
     results.sort(key=lambda x: x["score"], reverse=True)
+    
     return limit_per_category(results, k=2)
+
 
 def limit_per_category(sorted_results, k=2):
     category_map = defaultdict(list)
@@ -76,12 +70,15 @@ def limit_per_category(sorted_results, k=2):
         limited.extend(items)
     return limited
 
+
+# Converts "rgb(200,50,100)" → (200, 50, 100)
 def parse_rgb(rgb_string):
     try:
         return tuple(map(int, rgb_string.replace("rgb(", "").replace(")", "").split(",")))
     except Exception as e:
         print(f"⚠️ Error parsing RGB string: {rgb_string} → {e}")
         return (0, 0, 0)
+
 
 def color_distance(colors1, colors2):
     if not colors1 or not colors2:
@@ -93,6 +90,7 @@ def color_distance(colors1, colors2):
     except Exception as e:
         print(f"⚠️ Error in color_distance: {e}")
         return 9999
+
 
 def is_fallback_color(rgb_tuple):
     color = np.array(rgb_tuple)

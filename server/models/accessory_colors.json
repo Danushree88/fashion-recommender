@@ -1,0 +1,940 @@
+[
+  {
+    "image_path": "static/accessories/bags/images-10.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(205,59,63)",
+      "rgb(104,54,57)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bags/images-11.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(76,81,91)",
+      "rgb(125,127,132)",
+      "rgb(41,43,49)"
+    ]
+  },
+
+  {
+    "image_path": "static/accessories/bags/images-3.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(91,97,86)",
+      "rgb(145,156,146)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bags/images-4.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(202,148,147)",
+      "rgb(142,111,108)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bags/images-5.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(135,106,90)",
+      "rgb(81,58,43)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bags/images-6.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(87,55,49)",
+      "rgb(51,35,32)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bags/images-7.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(194,171,137)",
+      "rgb(1,1,1)",
+      "rgb(117,139,155)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bags/images-8.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(170,159,150)",
+      "rgb(78,76,75)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bags/images-9.jpeg",
+    "category": "bags",
+    "colors": [
+      "rgb(134,63,36)",
+      "rgb(171,104,84)",
+      "rgb(67,36,28)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-10.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(57,59,56)",
+      "rgb(0,0,0)",
+      "rgb(148,176,157)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-11.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(66,96,132)",
+      "rgb(137,157,179)",
+      "rgb(25,32,77)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-12.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(28,33,212)",
+      "rgb(119,132,201)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-13.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(218,191,115)",
+      "rgb(89,86,99)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-2.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(201,156,159)",
+      "rgb(110,92,93)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-3.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(137,134,133)",
+      "rgb(53,51,50)",
+      "rgb(173,168,167)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-4.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(3,3,3)",
+      "rgb(173,161,134)",
+      "rgb(96,79,64)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-5.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(54,145,194)",
+      "rgb(1,0,0)",
+      "rgb(165,138,105)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-6.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(156,130,83)",
+      "rgb(207,180,128)",
+      "rgb(0,0,0)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-7.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(158,140,119)",
+      "rgb(0,0,0)",
+      "rgb(49,45,45)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/bracelet/images-8.jpeg",
+    "category": "bracelet",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(197,49,30)",
+      "rgb(203,162,135)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-10.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(145,178,203)",
+      "rgb(74,93,108)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-11.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(202,160,166)",
+      "rgb(132,94,103)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-12.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(208,17,21)",
+      "rgb(175,141,138)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-2.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(82,82,81)",
+      "rgb(142,138,134)",
+      "rgb(35,35,34)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-2.png",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(140,198,230)",
+      "rgb(67,67,99)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-3.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(111,89,69)",
+      "rgb(188,155,128)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-4.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(73,60,40)",
+      "rgb(161,128,71)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-5.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(105,102,107)",
+      "rgb(26,25,35)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-6.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(179,160,128)",
+      "rgb(39,30,14)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-7.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(130,130,129)",
+      "rgb(65,65,64)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-8.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(10,81,51)",
+      "rgb(35,53,45)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images-9.jpeg",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(143,175,183)",
+      "rgb(89,105,110)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/chains/images.png",
+    "category": "chains",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(104,88,78)",
+      "rgb(205,165,139)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-10.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(225,114,155)",
+      "rgb(96,71,82)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-11.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(234,153,134)",
+      "rgb(126,108,103)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-12.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(128,149,160)",
+      "rgb(57,65,76)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-13.png",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(154,153,147)",
+      "rgb(72,76,75)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-15.jpg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(179,158,141)",
+      "rgb(125,98,78)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-2.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(162,152,145)",
+      "rgb(107,97,90)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-3.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(187,127,139)",
+      "rgb(146,46,69)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-4.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(143,135,136)",
+      "rgb(74,75,81)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-5.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(148,146,142)",
+      "rgb(83,81,78)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-6.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(55,54,48)",
+      "rgb(107,105,95)",
+      "rgb(158,156,142)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-8.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(177,129,89)",
+      "rgb(0,0,0)",
+      "rgb(88,81,48)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/earings/images-9.jpeg",
+    "category": "earings",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(185,173,133)",
+      "rgb(113,111,105)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/image-14.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(53,53,53)",
+      "rgb(117,117,116)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/image-15.jpg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(206,184,165)",
+      "rgb(120,114,111)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/image-16.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,1,0)",
+      "rgb(37,85,53)",
+      "rgb(173,156,118)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-10.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(98,32,27)",
+      "rgb(155,76,68)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-11.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(189,112,78)",
+      "rgb(152,80,50)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-12.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(137,120,111)",
+      "rgb(48,56,39)",
+      "rgb(215,170,158)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-13.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(144,103,89)",
+      "rgb(214,163,156)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-2.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(211,165,168)",
+      "rgb(138,101,98)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-3.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(199,140,173)",
+      "rgb(125,88,83)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-4.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(172,157,177)",
+      "rgb(1,1,1)",
+      "rgb(133,94,121)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-5.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(192,178,161)",
+      "rgb(88,87,83)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-6.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(203,164,168)",
+      "rgb(91,85,86)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-7.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(1,1,0)",
+      "rgb(182,137,123)",
+      "rgb(124,90,78)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-8.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(2,2,2)",
+      "rgb(171,22,32)",
+      "rgb(185,74,91)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/footwear/images-9.jpeg",
+    "category": "footwear",
+    "colors": [
+      "rgb(142,54,22)",
+      "rgb(0,0,0)",
+      "rgb(212,121,84)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-10.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(84,83,88)",
+      "rgb(0,0,0)",
+      "rgb(40,40,41)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-11.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(141,129,126)",
+      "rgb(44,44,44)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-12.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(78,84,94)",
+      "rgb(80,146,208)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-2.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(149,149,143)",
+      "rgb(47,46,46)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-3.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(38,37,42)",
+      "rgb(72,71,76)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-4.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(82,72,86)",
+      "rgb(144,134,148)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-5.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(126,75,49)",
+      "rgb(63,45,38)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-6.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(139,103,98)",
+      "rgb(0,0,0)",
+      "rgb(183,158,153)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-7.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(144,167,195)",
+      "rgb(98,121,152)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-8.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(126,130,134)",
+      "rgb(75,77,78)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images-9.jpeg",
+    "category": "glasses",
+    "colors": [
+      "rgb(70,85,78)",
+      "rgb(0,0,0)",
+      "rgb(144,138,129)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/glasses/images.png",
+    "category": "glasses",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(86,86,86)",
+      "rgb(150,150,150)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-10.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(205,172,132)",
+      "rgb(0,0,0)",
+      "rgb(122,87,54)"
+    ]
+  },
+
+  {
+    "image_path": "static/accessories/hats/images-12.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(208,176,146)",
+      "rgb(142,116,94)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-2.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(196,173,147)",
+      "rgb(102,75,66)",
+      "rgb(157,126,112)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-3.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(111,72,119)",
+      "rgb(188,160,204)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-4.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(164,192,205)",
+      "rgb(93,112,120)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-5.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(130,111,102)",
+      "rgb(0,0,0)",
+      "rgb(61,55,56)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-6.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(44,40,42)",
+      "rgb(205,185,158)",
+      "rgb(168,148,121)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-7.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(164,96,158)",
+      "rgb(0,0,0)",
+      "rgb(144,65,140)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-8.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(218,180,141)",
+      "rgb(128,92,74)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/hats/images-9.jpeg",
+    "category": "hats",
+    "colors": [
+      "rgb(210,166,116)",
+      "rgb(0,0,0)",
+      "rgb(148,109,74)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-10.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(151,160,164)",
+      "rgb(31,50,42)",
+      "rgb(66,134,111)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-2.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(1,0,1)",
+      "rgb(223,187,125)",
+      "rgb(86,82,92)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-3.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(222,170,156)",
+      "rgb(0,0,0)",
+      "rgb(142,110,101)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-4.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(200,169,120)",
+      "rgb(71,68,61)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-5.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(107,137,148)",
+      "rgb(221,177,119)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-6.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(1,1,0)",
+      "rgb(230,171,126)",
+      "rgb(107,73,47)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-7.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(1,0,0)",
+      "rgb(203,164,144)",
+      "rgb(127,88,76)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-8.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(192,172,143)",
+      "rgb(53,43,36)",
+      "rgb(137,117,94)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping-9.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(206,165,148)",
+      "rgb(129,48,69)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/rings/shopping.jpeg",
+    "category": "rings",
+    "colors": [
+      "rgb(1,1,1)",
+      "rgb(225,183,126)",
+      "rgb(160,128,90)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/image-13.jpg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(141,163,128)",
+      "rgb(66,82,65)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-10.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(215,183,130)",
+      "rgb(0,0,0)",
+      "rgb(157,128,82)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-11.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(201,164,139)",
+      "rgb(56,52,49)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-12.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(179,151,139)",
+      "rgb(44,33,29)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-2.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(109,63,74)",
+      "rgb(0,0,0)",
+      "rgb(215,173,141)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-3.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(214,135,105)",
+      "rgb(189,84,49)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-4.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(140,163,173)",
+      "rgb(96,115,124)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-5.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(190,165,143)",
+      "rgb(115,86,68)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-6.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(1,0,0)",
+      "rgb(70,49,43)",
+      "rgb(155,119,107)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-7.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(188,162,176)",
+      "rgb(102,91,98)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-8.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(172,136,108)",
+      "rgb(51,45,38)"
+    ]
+  },
+  {
+    "image_path": "static/accessories/watches/images-9.jpeg",
+    "category": "watches",
+    "colors": [
+      "rgb(0,0,0)",
+      "rgb(131,133,138)",
+      "rgb(51,53,58)"
+    ]
+  }
+]

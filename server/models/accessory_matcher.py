@@ -1,102 +1,88 @@
 import os
-from PIL import Image
+import json
 import numpy as np
-from sklearn.metrics.pairwise import euclidean_distances
-from .color_analysis import extract_dominant_colors
 from collections import defaultdict
+from itertools import product
+from colormath.color_objects import sRGBColor, LabColor
+from colormath.color_conversions import convert_color
+from colormath.color_diff import delta_e_cie2000
 
-# Match threshold (lower = stricter)
-MATCH_THRESHOLD = 20
+def recommend_accessories_from_subfolders(dress_colors_rgb, json_file="accessory_colors.json", top_k_per_category=2):
+    with open(json_file, "r") as f:
+        accessory_data = json.load(f)
 
-def recommend_accessories_from_subfolders(dress_colors_rgb, accessory_dir="accessories", top_k=5):
-    base_dir = os.path.join(os.path.dirname(__file__), '..', 'static', 'accessories')
-    base_dir = os.path.abspath(base_dir)
-
-    results = []
     dress_rgb = [parse_rgb(c) for c in dress_colors_rgb]
+    matches_by_category = defaultdict(list)
+    fallback_by_category = defaultdict(list)
 
-    fallback_accessories = []
-    exact_matches = []
+    has_exact_matches = False
 
-    for category in os.listdir(base_dir):
-        category_path = os.path.join(base_dir, category)
-        if not os.path.isdir(category_path):
-            continue
+    for accessory in accessory_data:
+        accessory_rgb = [parse_rgb(c) for c in accessory["colors"]]
+        distance = hsv_distance(dress_rgb, accessory_rgb)
+        # Adjust scaling to 100 - (distance * 0.8) for finer granularity, cap at 70
+        similarity = max(0, round(100 - (distance * 0.8), 1)) if distance < 70 else 0
 
-        for filename in os.listdir(category_path):
-            if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
-                image_path = os.path.join(category_path, filename)
+        item = {
+            "image_path": accessory["image_path"],
+            "category": accessory["category"],
+            "score": similarity,
+            "colors": accessory["colors"]  # Add for debugging
+        }
 
-                accessory_colors = extract_dominant_colors(image_path)
-                accessory_rgb = [parse_rgb(color) for color in accessory_colors]
+        print(f"Accessory {accessory['image_path']} colors: {accessory['colors']}, score: {similarity}, all_fallback: {all(is_strict_fallback_color(c) for c in accessory_rgb)}")
 
-                distance = color_distance(dress_rgb, accessory_rgb)
+        # Stricter check: all accessory colors must be very close to dress colors
+        all_colors_match = all(min(hsv_distance([c1], [c2]) for c2 in dress_rgb) < 20 for c1 in accessory_rgb)
+        if similarity >= 70 and all_colors_match:
+            matches_by_category[accessory["category"]].append(item)
+            has_exact_matches = True
+        elif all(is_strict_fallback_color(c) for c in accessory_rgb):  # Only pure fallback colors
+            fallback_by_category[accessory["category"]].append(item)
 
-                # Debug log
-                print(f"Accessory: {filename} | Dominant: {accessory_rgb} | Distance: {distance:.2f}")
+    # Select top 2 per category
+    final_matches = []
+    categories = set(matches_by_category.keys()) | set(fallback_by_category.keys())
+    for category in categories:
+        matches = matches_by_category.get(category, [])
+        if not matches and not has_exact_matches:  # Only use fallback if no exact matches exist
+            matches = fallback_by_category.get(category, [])
+        matches.sort(key=lambda x: x["score"], reverse=True)
+        final_matches.extend(matches[:top_k_per_category])
+        print(f"Category {category}: {len(matches)} matches, selected {min(len(matches), top_k_per_category)}, top score: {matches[0]['score'] if matches else 0}")
 
-                similarity = max(0, round(100 - (distance / 441.67 * 100), 1))
+    return final_matches
 
-                accessory_data = {
-                    "image_path": f"static/accessories/{category}/{filename}",
-                    "category": category,
-                    "score": similarity
-                }
+# --- Utilities ---
 
-                # Store fallback (black, white, golden)
-                if any(is_fallback_color(c) for c in accessory_rgb):
-                    fallback_accessories.append(accessory_data)
+def hsv_distance(colors1, colors2):
+    try:
+        distances = []
+        for c1, c2 in product(colors1, colors2):
+            rgb1 = sRGBColor(*[x/255 for x in c1])
+            rgb2 = sRGBColor(*[x/255 for x in c2])
+            lab1 = convert_color(rgb1, LabColor)
+            lab2 = convert_color(rgb2, LabColor)
+            distances.append(delta_e_cie2000(lab1, lab2))
+        return np.mean(distances) if distances else 9999
+    except Exception as e:
+        print("Color distance error:", e)
+        return 9999
 
-                # Store exact matches
-                if distance <= MATCH_THRESHOLD:
-                    exact_matches.append(accessory_data)
-
-    # Decision: Use exact match or fallback
-    if not exact_matches:
-        print("⚠️ No close match found. Showing fallback (black/white/golden) accessories.")
-        results = fallback_accessories
-    else:
-        results = exact_matches
-
-    results.sort(key=lambda x: x["score"], reverse=True)
-    return limit_per_category(results, k=2)
-
-# Only top-k per category
-def limit_per_category(sorted_results, k=2):
-    category_map = defaultdict(list)
-    for item in sorted_results:
-        if len(category_map[item['category']]) < k:
-            category_map[item['category']].append(item)
-    limited = []
-    for items in category_map.values():
-        limited.extend(items)
-    return limited
-
-# Converts "rgb(200,50,100)" → (200, 50, 100)
 def parse_rgb(rgb_string):
     try:
         return tuple(map(int, rgb_string.replace("rgb(", "").replace(")", "").split(",")))
-    except Exception as e:
-        print(f"⚠️ Error parsing RGB string: {rgb_string} → {e}")
+    except:
         return (0, 0, 0)
 
-# Calculate average distance between two color sets
-def color_distance(colors1, colors2):
-    if not colors1 or not colors2:
-        return 9999
-    try:
-        c1 = np.array(colors1).reshape(-1, 3)
-        c2 = np.array(colors2).reshape(-1, 3)
-        return np.mean(euclidean_distances(c1, c2))
-    except Exception as e:
-        print(f"⚠️ Error in color_distance: {e}")
-        return 9999
-
-# Check if color is close to black, white, or gold
-def is_fallback_color(rgb_tuple):
+def is_strict_fallback_color(rgb_tuple):
     color = np.array(rgb_tuple)
-    return (
-        np.linalg.norm(color - np.array([0, 0, 0])) < 30 or        # Black
-        np.linalg.norm(color - np.array([255, 255, 255])) < 30 or  # White
-        np.linalg.norm(color - np.array([255, 215, 0])) < 50       # Golden
+    gold_silver_priority = (
+        np.linalg.norm(color - np.array([255, 215, 0])) < 40 or  # Gold
+        np.linalg.norm(color - np.array([192, 192, 192])) < 40    # Silver
     )
+    neutral = (
+        np.linalg.norm(color - np.array([0, 0, 0])) < 30 or       # Black
+        np.linalg.norm(color - np.array([255, 255, 255])) < 30     # White
+    )
+    return gold_silver_priority or neutral

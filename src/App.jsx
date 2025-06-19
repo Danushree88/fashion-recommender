@@ -8,6 +8,7 @@ import TryOn from "./pages/TryOn";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import ProductCategories from "./pages/ProductCategories";
+import CategoryProducts from "./pages/CategoryProducts";
 
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/categories" element={<ProductCategories />} />
+            <Route path="/categories/:category" element={<CategoryProducts />} />
           </Routes>
         </div>
         <Footer />

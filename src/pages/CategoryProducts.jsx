@@ -1,6 +1,5 @@
-// src/pages/CategoryProducts.jsx
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom"; // ✅ Add Link
 import products from "../data/product";
 
 const CategoryProducts = () => {
@@ -23,10 +22,15 @@ const CategoryProducts = () => {
             <div className="mt-4">
               <h3 className="text-xl font-semibold">{item.name}</h3>
               <p className="text-gray-700 mt-1">Rs. {item.price}</p>
-              <p className="text-sm text-gray-600 mt-2">{item.description}</p>
-              <button className="mt-4 w-full bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">
+              <p className="text-sm text-gray-600 mt-2 line-clamp-2">{item.description}</p>
+
+              {/* ✅ Correct Link style */}
+              <Link
+                to={`/categories/${category}/${item.id}`}
+                className="mt-4 block text-center bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700"
+              >
                 View Details
-              </button>
+              </Link>
             </div>
           </div>
         ))}

@@ -9,7 +9,12 @@ const products = {
       salePrice: 1500,
       image: "/assets/products/bags/images-2.jpeg",
       description:
-        "A vibrant fusion of earthy tones, this multi-color tote brings rustic elegance to any outfit. Made from eco-friendly leather, it’s perfect for everyday style with a twist."
+        "A vibrant fusion of earthy tones, this multi-color tote brings rustic elegance to any outfit. Made from eco-friendly leather, it’s perfect for everyday style with a twist.",
+      color: "Multi Color",
+      size: "32cm x 42cm x 12cm",
+      material: "Eco-leather",
+      strapType: "Shoulder",
+      capacity: "Fits A4 and more"
     },
     {
       id: 2,
@@ -18,25 +23,40 @@ const products = {
       salePrice: 2199,
       image: "/assets/products/bags/images-3.jpeg",
       description:
-        "This mint green quilted satchel blends charm with class. Finished with elegant gold hardware and a charm keychain, it’s a standout accessory for both work and leisure"
+        "This mint green quilted satchel blends charm with class. Finished with elegant gold hardware and a charm keychain, it’s a standout accessory for both work and leisure.",
+      color: "Mint Green",
+      size: "25cm x 35cm x 10cm",
+      material: "PU Leather",
+      strapType: "Handheld & Shoulder",
+      capacity: "Holds iPad, wallet, essentials"
     },
     {
-      id:3 ,
+      id: 3,
       name: "Blush Minimal Handbag",
       price: 1749,
       salePrice: 1700,
       image: "/assets/products/bags/images-4.jpeg",
       description:
-        "Subtle, sleek, and sophisticated. This blush pink handbag features soft faux leather and a clean silhouette for a timeless feminine touch"
+        "Subtle, sleek, and sophisticated. This blush pink handbag features soft faux leather and a clean silhouette for a timeless feminine touch.",
+      color: "Blush Pink",
+      size: "28cm x 30cm x 9cm",
+      material: "Faux Leather",
+      strapType: "Handheld",
+      capacity: "Essentials only"
     },
     {
-      id:4 ,
+      id: 4,
       name: "Classic Espresso Tote",
       price: 1990,
-      salePrice:1900 ,
+      salePrice: 1900,
       image: "/assets/products/bags/images-5.jpeg",
       description:
-        "Crafted in rich brown tones, this structured leather tote exudes a professional yet warm aesthetic. Ideal for the modern office-goer or weekend brunches."
+        "Crafted in rich brown tones, this structured leather tote exudes a professional yet warm aesthetic. Ideal for the modern office-goer or weekend brunches.",
+      color: "Espresso Brown",
+      size: "33cm x 44cm x 13cm",
+      material: "Genuine Leather",
+      strapType: "Shoulder",
+      capacity: "Laptop, files, bottle"
     },
     {
       id: 5,
@@ -44,8 +64,12 @@ const products = {
       price: 1499,
       salePrice: 1399,
       image: "/assets/products/bags/images-6.jpeg",
-      description:
-        ""
+      description: "Minimal design meets maximum utility in this slim ivory carryall bag.",
+      color: "Ivory",
+      size: "26cm x 36cm x 8cm",
+      material: "Canvas",
+      strapType: "Crossbody",
+      capacity: "Fits A4 notebook"
     },
     {
       id: 6,
@@ -54,110 +78,163 @@ const products = {
       salePrice: 1699,
       image: "/assets/products/bags/images-7.jpeg",
       description:
-        "This blue and beige woven tote screams summer vibes. Lightweight and breathable, it’s your perfect partner for beach trips and sunny outings."
+        "This blue and beige woven tote screams summer vibes. Lightweight and breathable, it’s your perfect partner for beach trips and sunny outings.",
+      color: "Natural Beige & Blue",
+      size: "30cm x 40cm x 10cm",
+      material: "Straw & Cotton",
+      strapType: "Shoulder",
+      capacity: "Beach towel, bottle, book"
     },
     {
-      id:7 ,
+      id: 7,
       name: "Elegant Pearl Satchel",
-      price:2199,
-      salePrice:2099 ,
+      price: 2199,
+      salePrice: 2099,
       image: "/assets/products/bags/images-8.jpeg",
       description:
-        "A soft ivory satchel adorned with a pearl-style top handle and gold clasp. This refined piece is perfect for weddings, parties, or elegant dinners."
+        "A soft ivory satchel adorned with a pearl-style top handle and gold clasp. This refined piece is perfect for weddings, parties, or elegant dinners.",
+      color: "Pearl Ivory",
+      size: "20cm x 28cm x 8cm",
+      material: "Silk Finish PU",
+      strapType: "Handheld",
+      capacity: "Compact: phone & makeup"
     },
     {
       id: 8,
       name: "Amber Vintage Handbag",
-      price:2249 ,
-      salePrice:2100 ,
+      price: 2249,
+      salePrice: 2100,
       image: "/assets/products/bags/images-9.jpeg",
       description:
-        "Structured, bold, and timeless — this amber leather handbag with vertical pleats and metal flower embellishments is a true vintage-inspired statement."
+        "Structured, bold, and timeless — this amber leather handbag with vertical pleats and metal flower embellishments is a true vintage-inspired statement.",
+      color: "Amber Orange",
+      size: "25cm x 34cm x 9cm",
+      material: "Textured Leather",
+      strapType: "Shoulder",
+      capacity: "Mid-size essentials"
     },
     {
       id: 9,
       name: "Scarlet Luxe Tote",
-      price:2499 ,
-      salePrice:2300 ,
+      price: 2499,
+      salePrice: 2300,
       image: "/assets/products/bags/images-10.jpeg",
       description:
-        "Elevate your everyday style with the Scarlet Luxe Tote. Crafted from premium faux leather, this bold red handbag features sleek dual handles, minimal gold-tone hardware, and a spacious interior—perfect for work, shopping, or a casual brunch. The vibrant red color adds a pop of confidence to any outfit."
+        "Crafted from premium faux leather, this bold red handbag features sleek dual handles, minimal gold-tone hardware, and a spacious interior.",
+      color: "Scarlet Red",
+      size: "30cm x 42cm x 12cm",
+      material: "Faux Leather",
+      strapType: "Dual Handle",
+      capacity: "Work + casual items"
     },
     {
-      id:10 ,
+      id: 10,
       name: "Midnight Charm Satchel",
-      price:3199 ,
-      salePrice:3000 ,
+      price: 3199,
+      salePrice: 3000,
       image: "/assets/products/bags/images-11.jpeg",
       description:
-        "The Midnight Charm Satchel blends elegance with utility. Designed in classic black with gold-accented hardware and a chic keychain tassel, this bag exudes sophistication. It includes both top handles and a detachable shoulder strap for versatile styling. Ideal for formal meetings or classy evenings out."
+        "Designed in classic black with gold-accented hardware and a chic keychain tassel, this bag exudes sophistication.",
+      color: "Midnight Black",
+      size: "29cm x 38cm x 11cm",
+      material: "PU Leather",
+      strapType: "Top Handle & Detachable Strap",
+      capacity: "Perfect for meetings/events"
     },
-
   ],
+
 
   bracelet: [
     {
-      id:1 ,
+      id: 1,
       name: "Blush Sparkle Slider Bracelet",
-      price:799 ,
-      salePrice:799 ,
+      price: 799,
+      salePrice: 799,
       image: "/assets/products/bracelets/images-2.jpeg",
-      description:
-        "A dainty rose-gold bracelet encrusted with pink zircon stones, perfect for casual glam or layering with other pieces. Adjustable slider clasp ensures a snug, elegant fit."
+      description: "A dainty rose-gold bracelet encrusted with pink zircon stones, perfect for casual glam or layering with other pieces. Adjustable slider clasp ensures a snug, elegant fit.",
+      color: "Rose Gold,Pink",
+      material: "Zircon & Alloy",
+      size: "Adjustable",
+      closureType: "Slider Clasp",
+      style: "Minimalist"
     },
     {
       id: 2,
       name: "Minimal Rose Chain Bracelet",
-      price:649 ,
+      price: 649,
       salePrice: 649,
       image: "/assets/products/bracelets/images-3.jpeg",
-      description:
-        "Simple yet chic, this fine rose-gold chain bracelet features a delicate minimalist design—ideal for daily wear or stacking with bangles."
+      description: "Simple yet chic, this fine rose-gold chain bracelet features a delicate minimalist design—ideal for daily wear or stacking with bangles.",
+      color: "Rose Gold",
+      material: "Alloy",
+      size: "Free Size",
+      closureType: "Lobster Clasp",
+      style: "Minimalist"
     },
     {
       id: 3,
       name: "Festive Pearl & Bead Bracelet",
       price: 999,
-      salePrice:999 ,
+      salePrice: 999,
       image: "/assets/products/bracelets/images-4.jpeg",
-      description:
-        "A vibrant mix of white pearls and multicolored beads gives this bracelet a festive, traditional look. Finished with a gold-toned charm drop."
+      description: "A vibrant mix of white pearls and multicolored beads gives this bracelet a festive, traditional look. Finished with a gold-toned charm drop.",
+      color: "Multicolor",
+      material: "Pearls & Beads",
+      size: "6.5 inches",
+      closureType: "Hook Clasp",
+      style: "Festive"
     },
     {
       id: 4,
       name: "Ocean Stone Bead Bracelet",
       price: 899,
-      salePrice:899 ,
+      salePrice: 899,
       image: "/assets/products/bracelets/images-5.jpeg",
-      description:
-        "Crafted with marbled blue gemstone beads and a centerpiece charm, this bracelet brings oceanic calm to your outfit. Stretch-fit for ease."
+      description: "Crafted with marbled blue gemstone beads and a centerpiece charm, this bracelet brings oceanic calm to your outfit. Stretch-fit for ease.",
+      color: "Ocean Blue",
+      material: "Natural Stones",
+      size: "Stretchable",
+      closureType: "No Clasp (Stretch)",
+      style: "Boho"
     },
     {
-      id:5,
-      name: " Golden Orb & Pearl Bracelet",
-      price:849 ,
-      salePrice:849 ,
+      id: 5,
+      name: "Golden Orb & Pearl Bracelet",
+      price: 849,
+      salePrice: 849,
       image: "/assets/products/bracelets/images-6.jpeg",
-      description:
-        "A modern bracelet combining glossy golden orbs with soft pink pearls—perfect for elevating your evening looks."
+      description: "A modern bracelet combining glossy golden orbs with soft pink pearls—perfect for elevating your evening looks.",
+      color: "Gold & Pink",
+      material: "Pearls & Alloy",
+      size: "Free Size",
+      closureType: "Lobster Clasp",
+      style: "Evening Wear"
     },
     {
       id: 6,
       name: "Royal Mirror Kada Bracelet",
-      price:1299 ,
-      salePrice:1299 ,
+      price: 1299,
+      salePrice: 1299,
       image: "/assets/products/bracelets/images-7.jpeg",
-      description:
-        "Inspired by traditional Indian jewelry, this elegant gold bangle bracelet features black enamel detailing and mirror-work accents."
+      description: "Inspired by traditional Indian jewelry, this elegant gold bangle bracelet features black enamel detailing and mirror-work accents.",
+      color: "Gold & Black",
+      material: "Alloy with Enamel",
+      size: "2.6 inches",
+      closureType: "Hinged Clasp",
+      style: "Ethnic"
     },
     {
       id: 7,
       name: "Rustic Red Pearl Charm Bracelet",
       price: 699,
-      salePrice:699 ,
+      salePrice: 699,
       image: "/assets/products/bracelets/images-8.jpeg",
-      description:
-        " Earthy tones meet elegance with this mix of natural pearls and bold red stones. Clasp closure with antique-finish spacers."
+      description: "Earthy tones meet elegance with this mix of natural pearls and bold red stones. Clasp closure with antique-finish spacers.",
+      color: "Red & Ivory",
+      material: "Pearls & Resin",
+      size: "6.8 inches",
+      closureType: "Lobster Clasp",
+      style: "Casual"
     },
     {
       id: 8,
@@ -165,28 +242,39 @@ const products = {
       price: 1099,
       salePrice: 1099,
       image: "/assets/products/bracelets/images-9.jpeg",
-      description:
-        "Floral-inspired and studded with green and silver stones, this bracelet makes a royal statement. Adjustable cuff style for easy wear."
+      description: "Floral-inspired and studded with green and silver stones, this bracelet makes a royal statement. Adjustable cuff style for easy wear.",
+      color: "Green & Silver",
+      material: "Metal & Stones",
+      size: "Adjustable Cuff",
+      closureType: "Open Cuff",
+      style: "Vintage"
     },
     {
       id: 9,
       name: "Mint Jade Energy Bracelet",
-      price:749,
+      price: 749,
       salePrice: 749,
       image: "/assets/products/bracelets/images-10.jpeg",
-      description:
-        "A stretch-fit bracelet made with calming mint jade beads. Ideal for wellness lovers and minimalist jewelry fans."
+      description: "A stretch-fit bracelet made with calming mint jade beads. Ideal for wellness lovers and minimalist jewelry fans.",
+      color: "Mint Green",
+      material: "Jade Beads",
+      size: "Stretchable",
+      closureType: "No Clasp (Stretch)",
+      style: "Minimalist"
     },
     {
       id: 10,
       name: "Evil Eye Bead Bracelet",
-      price:899 ,
+      price: 899,
       salePrice: 899,
       image: "/assets/products/bracelets/images-11.jpeg",
-      description:
-        "A protective charm bracelet with striking blue evil eye beads. Perfect to ward off negativity while staying stylish."
+      description: "A protective charm bracelet with striking blue evil eye beads. Perfect to ward off negativity while staying stylish.",
+      color: "Blue & White",
+      material: "Glass Beads",
+      size: "7 inches",
+      closureType: "Elastic",
+      style: "Spiritual"
     },
-
   ],
 
   chains: [
@@ -195,175 +283,280 @@ const products = {
     name: "Layered Pearl Chain",
     price: 1099,
     salePrice: 999,
+    color: "Gold & White",
+    size: "One Size",
+    length: "45 cm",
+    material: "Faux Pearls & Alloy",
     image: "/assets/products/chains/images-2.jpeg",
-    description: "A triple-layered chain adorned with delicate pearls and beads. Perfect for adding elegance to any outfit."
+    description: "A triple-layered chain adorned with delicate pearls and beads. Perfect for adding elegance to any outfit.",
+    designerNotes: "Pairs beautifully with both ethnic and western wear. Adjustable clasp."
   },
   {
     id: 2,
     name: "Twisted Vine Gold Chain",
     price: 949,
     salePrice: 899,
+    color: "Gold",
+    size: "One Size",
+    length: "42 cm",
+    material: "Alloy & Rhinestones",
     image: "/assets/products/chains/images-3.jpeg",
-    description: "A graceful gold-toned chain with a twisted vine design and embedded stones for a classy finish."
+    description: "A graceful gold-toned chain with a twisted vine design and embedded stones for a classy finish.",
+    designerNotes: "Great for festive occasions or evening wear."
   },
   {
     id: 3,
     name: "Bold Link Gold Chain",
     price: 1299,
     salePrice: 1199,
+    color: "Gold",
+    size: "One Size",
+    length: "48 cm",
+    material: "Metal Alloy",
     image: "/assets/products/chains/images-4.jpeg",
-    description: "A chunky gold link chain necklace that stands out. Great for both formal and edgy street styles."
+    description: "A chunky gold link chain necklace that stands out. Great for both formal and edgy street styles.",
+    designerNotes: "Statement piece best paired with solids."
   },
   {
     id: 4,
     name: "Minimal Stone Charm Chain",
     price: 799,
     salePrice: 749,
+    color: "Gold with Multicolor Stones",
+    size: "One Size",
+    length: "40 cm + 5 cm extension",
+    material: "Brass & Synthetic Stones",
     image: "/assets/products/chains/images-5.jpeg",
-    description: "A dainty chain with minimal colored stones spaced evenly. Adds a soft and playful touch to your look."
+    description: "A dainty chain with minimal colored stones spaced evenly. Adds a soft and playful touch to your look.",
+    designerNotes: "Lightweight, perfect for everyday styling."
   },
   {
     id: 5,
     name: "Obsidian Pendant Chain",
     price: 1099,
     salePrice: 999,
+    color: "Black & Gold",
+    size: "One Size",
+    length: "46 cm",
+    material: "Black Obsidian Stone & Brass",
     image: "/assets/products/chains/images-6.jpeg",
-    description: "This chain features a rectangular black obsidian pendant, offering a sleek and modern aesthetic."
+    description: "This chain features a rectangular black obsidian pendant, offering a sleek and modern aesthetic.",
+    designerNotes: "Perfect for a minimalist monochrome outfit."
   },
   {
     id: 6,
     name: "Silver Sleek Curve Chain",
     price: 899,
     salePrice: 849,
+    color: "Silver",
+    size: "One Size",
+    length: "42 cm",
+    material: "Stainless Steel",
     image: "/assets/products/chains/images-7.jpeg",
-    description: "Elegant and minimal, this silver chain features a sleek curved design, perfect for everyday wear."
+    description: "Elegant and minimal, this silver chain features a sleek curved design, perfect for everyday wear.",
+    designerNotes: "Matches well with watches and small earrings."
   },
   {
     id: 7,
     name: "Bare Gold Statement Chain",
     price: 699,
     salePrice: 649,
+    color: "Gold",
+    size: "One Size",
+    length: "43 cm",
+    material: "Metal Alloy",
     image: "/assets/products/chains/images-8.jpeg",
-    description: "A simple, thin gold chain perfect for layering or wearing alone for a refined minimal look."
+    description: "A simple, thin gold chain perfect for layering or wearing alone for a refined minimal look.",
+    designerNotes: "Layer with other chains for a stacked look."
   },
   {
     id: 8,
     name: "Turquoise Bloom Pendant",
     price: 999,
     salePrice: 949,
+    color: "Turquoise & Silver",
+    size: "One Size",
+    length: "45 cm",
+    material: "Turquoise Stone & Alloy",
     image: "/assets/products/chains/images-9.jpeg",
-    description: "This charming chain features a turquoise floral pendant, perfect for a fresh and vibrant look."
+    description: "This charming chain features a turquoise floral pendant, perfect for a fresh and vibrant look.",
+    designerNotes: "A summer-friendly accessory."
   },
   {
     id: 9,
     name: "Blue Butterfly Chain",
     price: 899,
     salePrice: 849,
+    color: "Blue & Silver",
+    size: "One Size",
+    length: "42 cm",
+    material: "Acrylic Pendant & Alloy Chain",
     image: "/assets/products/chains/images-10.jpeg",
-    description: "A playful silver chain with a translucent blue butterfly pendant. Great for a cute and trendy outfit."
+    description: "A playful silver chain with a translucent blue butterfly pendant. Great for a cute and trendy outfit.",
+    designerNotes: "Teen favorite; perfect gift pick."
   },
   {
     id: 10,
     name: "Red Heart Pendant Chain",
     price: 899,
     salePrice: 799,
+    color: "Red & Silver",
+    size: "One Size",
+    length: "44 cm",
+    material: "Glass Pendant & Metal Chain",
     image: "/assets/products/chains/images-12.jpeg",
-    description: "Featuring a bold red heart pendant on a fine silver chain—perfect for romantic or festive looks."
-  }
-
+    description: "Featuring a bold red heart pendant on a fine silver chain—perfect for romantic or festive looks.",
+    designerNotes: "Makes a great Valentine's or birthday gift."
+  },
 ],
 
-  earings: [
+
+ earings: [
   {
     id: 1,
     name: "Tribal Layered Jhumka",
     price: 599,
     salePrice: 549,
+    color: "Oxidized Silver",
+    size: "Medium",
+    length: "6 cm",
+    material: "Alloy",
     image: "/assets/products/earings/images-2.jpeg",
-    description: "Antique silver-tone layered jhumkas with intricate ethnic carvings. A perfect match for traditional outfits."
+    description: "Antique silver-tone layered jhumkas with intricate ethnic carvings. A perfect match for traditional outfits.",
+    designerNotes: "Pairs well with lehengas and cotton sarees. Adds a folk flair."
   },
   {
     id: 2,
     name: "Ruby Stud Glam Earrings",
     price: 699,
     salePrice: 649,
+    color: "Ruby Red & Silver",
+    size: "Small",
+    length: "2 cm",
+    material: "Crystal & Alloy",
     image: "/assets/products/earings/images-3.jpeg",
-    description: "Bold ruby-red stud earrings surrounded by shimmering crystals. Elegant and ideal for evening wear."
+    description: "Bold ruby-red stud earrings surrounded by shimmering crystals. Elegant and ideal for evening wear.",
+    designerNotes: "Perfect for formal wear and cocktail dresses."
   },
   {
     id: 3,
     name: "Boho Square Dangler",
     price: 499,
     salePrice: 449,
+    color: "Multicolor & Silver",
+    size: "Large",
+    length: "7 cm",
+    material: "Thread, Wood & Metal",
     image: "/assets/products/earings/images-4.jpeg",
-    description: "Handcrafted tribal danglers with square beaded motifs and earthy details. A perfect boho vibe."
+    description: "Handcrafted tribal danglers with square beaded motifs and earthy details. A perfect boho vibe.",
+    designerNotes: "Goes great with maxi dresses and Indo-Western outfits."
   },
   {
     id: 4,
     name: "Peacock Teardrop Silver Earrings",
     price: 799,
     salePrice: 749,
+    color: "Silver",
+    size: "Medium",
+    length: "5.5 cm",
+    material: "Oxidized Silver Alloy",
     image: "/assets/products/earings/images-5.jpeg",
-    description: "Silver oxidized earrings with peacock and teardrop patterns—ideal for ethnic occasions."
+    description: "Silver oxidized earrings with peacock and teardrop patterns—ideal for ethnic occasions.",
+    designerNotes: "A perfect Navratri or festive season pick."
   },
   {
     id: 5,
     name: "Antique Floral Chandbali",
     price: 899,
     salePrice: 849,
+    color: "Silver & Pearl White",
+    size: "Large",
+    length: "6 cm",
+    material: "Oxidized Metal & Faux Pearls",
     image: "/assets/products/earings/images-6.jpeg",
-    description: "Vintage-inspired chandbalis featuring floral detailing and hanging pearl accents. Elegant and regal."
+    description: "Vintage-inspired chandbalis featuring floral detailing and hanging pearl accents. Elegant and regal.",
+    designerNotes: "Perfect for weddings and festive wear. Pairs well with lehengas and silk sarees."
   },
-  {
+
+    {
     id: 6,
     name: "Blue Sapphire Oval Studs",
     price: 749,
     salePrice: 699,
+    color: "Blue & Silver",
+    size: "Small",
+    length: "2.5 cm",
+    material: "Crystal & Alloy",
     image: "/assets/products/earings/images-7.jpeg",
-    description: "Oval-cut sapphire blue studs with a halo of white stones. Perfect for modern royal charm."
+    description: "Oval-cut sapphire blue studs with a halo of white stones. Perfect for modern royal charm.",
+    designerNotes: "Elegant for evening parties, western gowns, and cocktail outfits."
   },
   {
     id: 7,
     name: "Orange Ghungroo Jhumka",
     price: 599,
     salePrice: 549,
+    color: "Orange & Gold",
+    size: "Medium",
+    length: "5 cm",
+    material: "Enamel & Brass",
     image: "/assets/products/earings/images-8.jpeg",
-    description: "Bright orange enamel jhumkas with ghungroo bells—adds a pop of color to traditional fits."
+    description: "Bright orange enamel jhumkas with ghungroo bells—adds a pop of color to traditional fits.",
+    designerNotes: "Brightens up simple kurtas and sarees; ideal for Haldi functions."
   },
   {
     id: 8,
     name: "Dual-Tone Infinity Loops",
     price: 649,
     salePrice: 599,
+    color: "Silver & Gold",
+    size: "Medium",
+    length: "4.5 cm",
+    material: "Alloy",
     image: "/assets/products/earings/images-9.jpeg",
-    description: "Sleek golden and silver infinity loops, lightweight yet striking. Ideal for casual to festive looks."
+    description: "Sleek golden and silver infinity loops, lightweight yet striking. Ideal for casual to festive looks.",
+    designerNotes: "A minimal yet stylish addition to Indo-Western attire."
   },
   {
     id: 9,
     name: "Coral Drop Earrings",
     price: 499,
     salePrice: 449,
+    color: "Coral & Rose Gold",
+    size: "Small",
+    length: "3.5 cm",
+    material: "Enamel & Alloy",
     image: "/assets/products/earings/images-11.jpeg",
-    description: "Minimalist drop earrings with coral-toned enamel finish. Clean, chic, and modern."
+    description: "Minimalist drop earrings with coral-toned enamel finish. Clean, chic, and modern.",
+    designerNotes: "Works beautifully with office wear and casual shirts."
   },
   {
     id: 10,
     name: "Ocean Teardrop Earrings",
     price: 579,
     salePrice: 529,
+    color: "Blue & Rose Gold",
+    size: "Medium",
+    length: "5 cm",
+    material: "Resin & Metal",
     image: "/assets/products/earings/images-12.jpeg",
-    description: "Glossy blue teardrop earrings with rose gold tops—great for casual or beachy summer days."
+    description: "Glossy blue teardrop earrings with rose gold tops—great for casual or beachy summer days.",
+    designerNotes: "Style with sundresses or bohemian outfits on vacation."
   }
 ],
 
-  footwear: [
+footwear: [
   {
     id: 1,
     name: "Glossy Pink Heels",
     price: 1499,
     salePrice: 1399,
     image: "/assets/products/footwear/images-3.jpeg",
-    description: "Elegant glossy pink high heels that add a touch of sophistication to any outfit—perfect for parties and formal occasions."
+    description: "Elegant glossy pink high heels that add a touch of sophistication to any outfit—perfect for parties and formal occasions.",
+    color: "Glossy Pink",
+    sizeOptions: [36, 37, 38, 39, 40, 41],
+    strapType: "Ankle Strap",
+    material: "Faux Leather"
   },
   {
     id: 2,
@@ -371,7 +564,11 @@ const products = {
     price: 799,
     salePrice: 749,
     image: "/assets/products/footwear/images-4.jpeg",
-    description: "Comfortable and trendy pink slides with dual straps. Ideal for casual wear and summer strolls."
+    description: "Comfortable and trendy pink slides with dual straps. Ideal for casual wear and summer strolls.",
+    color: "Soft Pink",
+    sizeOptions: [36, 37, 38, 39, 40],
+    strapType: "Dual Wide Strap",
+    material: "PU"
   },
   {
     id: 3,
@@ -379,7 +576,11 @@ const products = {
     price: 999,
     salePrice: 949,
     image: "/assets/products/footwear/images-5.jpeg",
-    description: "Simple yet stylish beige slip-on flats designed for all-day comfort and ease."
+    description: "Simple yet stylish beige slip-on flats designed for all-day comfort and ease.",
+    color: "Beige",
+    sizeOptions: [35, 36, 37, 38, 39, 40, 41],
+    strapType: "Slip-on",
+    material: "Faux Leather"
   },
   {
     id: 4,
@@ -387,7 +588,11 @@ const products = {
     price: 599,
     salePrice: 549,
     image: "/assets/products/footwear/images-6.jpeg",
-    description: "Cute and comfortable flip-flops with pastel pink straps. Lightweight and perfect for casual wear."
+    description: "Cute and comfortable flip-flops with pastel pink straps. Lightweight and perfect for casual wear.",
+    color: "Pastel Pink",
+    sizeOptions: [36, 37, 38, 39, 40],
+    strapType: "Toe Post",
+    material: "Rubber"
   },
   {
     id: 5,
@@ -395,7 +600,11 @@ const products = {
     price: 699,
     salePrice: 649,
     image: "/assets/products/footwear/images-8.jpeg",
-    description: "Fun and playful red slides featuring Hello Kitty design. Perfect for lounging or playful outfits."
+    description: "Fun and playful red slides featuring Hello Kitty design. Perfect for lounging or playful outfits.",
+    color: "Cherry Red",
+    sizeOptions: [35, 36, 37, 38, 39],
+    strapType: "Slide Strap",
+    material: "PVC"
   },
   {
     id: 6,
@@ -403,7 +612,11 @@ const products = {
     price: 849,
     salePrice: 799,
     image: "/assets/products/footwear/images-9.jpeg",
-    description: "Bold rust-orange cushioned slippers, designed for ultra comfort and cozy indoor wear."
+    description: "Bold rust-orange cushioned slippers, designed for ultra comfort and cozy indoor wear.",
+    color: "Rust Orange",
+    sizeOptions: [36, 37, 38, 39, 40],
+    strapType: "Single Strap",
+    material: "Memory Foam & Rubber"
   },
   {
     id: 7,
@@ -411,7 +624,11 @@ const products = {
     price: 999,
     salePrice: 949,
     image: "/assets/products/footwear/images-10.jpeg",
-    description: "Classic cherry red flats with cross straps. A versatile choice for daily wear or light ethnic styling."
+    description: "Classic cherry red flats with cross straps. A versatile choice for daily wear or light ethnic styling.",
+    color: "Cherry Red",
+    sizeOptions: [36, 37, 38, 39, 40, 41],
+    strapType: "Criss-Cross Strap",
+    material: "PU Leather"
   },
   {
     id: 8,
@@ -419,7 +636,11 @@ const products = {
     price: 699,
     salePrice: 649,
     image: "/assets/products/footwear/images-11.jpeg",
-    description: "Slim strap flip-flops in a coral orange hue—lightweight, travel-friendly, and water-resistant."
+    description: "Slim strap flip-flops in a coral orange hue—lightweight, travel-friendly, and water-resistant.",
+    color: "Coral Orange",
+    sizeOptions: [36, 37, 38, 39],
+    strapType: "Thong Strap",
+    material: "EVA Foam"
   },
   {
     id: 9,
@@ -427,7 +648,11 @@ const products = {
     price: 799,
     salePrice: 749,
     image: "/assets/products/footwear/images-12.jpeg",
-    description: "Soft blush pink slides with an elegant knot design. Stylish and comfortable for daily lounging."
+    description: "Soft blush pink slides with an elegant knot design. Stylish and comfortable for daily lounging.",
+    color: "Blush Pink",
+    sizeOptions: [35, 36, 37, 38, 39],
+    strapType: "Knot Strap",
+    material: "Satin & Rubber Sole"
   },
   {
     id: 10,
@@ -435,19 +660,28 @@ const products = {
     price: 899,
     salePrice: 849,
     image: "/assets/products/footwear/images-13.jpeg",
-    description: "Woven-texture pink slip-ons with a natural base. A perfect blend of comfort and rustic charm."
-  }
+    description: "Woven-texture pink slip-ons with a natural base. A perfect blend of comfort and rustic charm.",
+    color: "Textured Pink",
+    sizeOptions: [36, 37, 38, 39, 40, 41],
+    strapType: "Closed Upper",
+    material: "Canvas & Rubber"
+  },
 ],
 
-  glasses:
-[
+
+  glasses: [
   {
     id: 1,
     name: "Crystal Cat Eye Shades",
     price: 1299,
     salePrice: 1199,
     image: "/assets/products/glasses/images-2.jpeg",
-    description: "Bold cat-eye sunglasses encrusted with crystals. Glamorous and attention-grabbing for diva moments."
+    description: "Bold cat-eye sunglasses encrusted with crystals. Glamorous and attention-grabbing for diva moments.",
+    color: "Crystal Silver",
+    frameType: "Cat Eye",
+    lensType: "Gradient UV",
+    material: "Plastic & Crystal Embellishments",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 2,
@@ -455,7 +689,12 @@ const products = {
     price: 899,
     salePrice: 849,
     image: "/assets/products/glasses/images-3.jpeg",
-    description: "Timeless oversized black sunglasses for ultimate sun protection and style. A must-have classic."
+    description: "Timeless oversized black sunglasses for ultimate sun protection and style. A must-have classic.",
+    color: "Jet Black",
+    frameType: "Oversized",
+    lensType: "Polarized",
+    material: "Acetate",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 3,
@@ -463,7 +702,12 @@ const products = {
     price: 999,
     salePrice: 949,
     image: "/assets/products/glasses/images-4.jpeg",
-    description: "Dark-lens wayfarer sunglasses with vintage styling—perfect for daily wear and travel looks."
+    description: "Dark-lens wayfarer sunglasses with vintage styling—perfect for daily wear and travel looks.",
+    color: "Tortoise Brown",
+    frameType: "Wayfarer",
+    lensType: "UV400",
+    material: "Resin",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 4,
@@ -471,7 +715,12 @@ const products = {
     price: 1099,
     salePrice: 999,
     image: "/assets/products/glasses/images-5.jpeg",
-    description: "Retro aviator sunglasses with warm brown lenses and golden rims. Ideal for a rustic-chic appearance."
+    description: "Retro aviator sunglasses with warm brown lenses and golden rims. Ideal for a rustic-chic appearance.",
+    color: "Brown-Gold",
+    frameType: "Aviator",
+    lensType: "Brown Tint",
+    material: "Metal Alloy",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 5,
@@ -479,7 +728,12 @@ const products = {
     price: 999,
     salePrice: 949,
     image: "/assets/products/glasses/images-6.jpeg",
-    description: "Light pink square sunglasses with a modern-retro flair. Adds charm to casual and semi-formal outfits."
+    description: "Light pink square sunglasses with a modern-retro flair. Adds charm to casual and semi-formal outfits.",
+    color: "Blush Pink",
+    frameType: "Square",
+    lensType: "UV400",
+    material: "Plastic",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 6,
@@ -487,7 +741,12 @@ const products = {
     price: 1099,
     salePrice: 1049,
     image: "/assets/products/glasses/images-7.jpeg",
-    description: "Stylish aviators with cool blue gradient lenses—perfect for beach days and bright skies."
+    description: "Stylish aviators with cool blue gradient lenses—perfect for beach days and bright skies.",
+    color: "Sky Blue",
+    frameType: "Aviator",
+    lensType: "Reflective Gradient",
+    material: "Stainless Steel",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 7,
@@ -495,7 +754,12 @@ const products = {
     price: 1199,
     salePrice: 1099,
     image: "/assets/products/glasses/images-9.jpeg",
-    description: "Military-inspired matte green pilot sunglasses with sturdy metal frames. Stylish and durable."
+    description: "Military-inspired matte green pilot sunglasses with sturdy metal frames. Stylish and durable.",
+    color: "Matte Army Green",
+    frameType: "Pilot",
+    lensType: "Smoke UV",
+    material: "Metal & Polycarbonate",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 8,
@@ -503,7 +767,12 @@ const products = {
     price: 899,
     salePrice: 849,
     image: "/assets/products/glasses/images-10.jpeg",
-    description: "Minimalist all-black round sunglasses that offer a sleek look with a vintage nod."
+    description: "Minimalist all-black round sunglasses that offer a sleek look with a vintage nod.",
+    color: "Noir Black",
+    frameType: "Round",
+    lensType: "Dark UV",
+    material: "Plastic",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 9,
@@ -511,7 +780,12 @@ const products = {
     price: 999,
     salePrice: 949,
     image: "/assets/products/glasses/images-11.jpeg",
-    description: "Statement sunglasses with large black square frames and gradient lenses for added drama."
+    description: "Statement sunglasses with large black square frames and gradient lenses for added drama.",
+    color: "Charcoal Black",
+    frameType: "Square",
+    lensType: "Gradient Tint",
+    material: "Acetate",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
   },
   {
     id: 10,
@@ -519,19 +793,28 @@ const products = {
     price: 1199,
     salePrice: 1099,
     image: "/assets/products/glasses/images-12.jpeg",
-    description: "Sport-style sunglasses with blue mirrored lenses and rugged black frames. Perfect for active outings."
-  }
+    description: "Sport-style sunglasses with blue mirrored lenses and rugged black frames. Perfect for active outings.",
+    color: "Electric Blue & Black",
+    frameType: "Wraparound Sport",
+    lensType: "Mirrored UV",
+    material: "Nylon & Rubber",
+    sizeOptions: ["Small","Medium", "Large","Oversized"]
+  },
 ],
 
-  hats:
-[
+
+hats: [
   {
     id: 1,
     name: "Floral Bow Sun Hat",
     price: 899,
     salePrice: 849,
     image: "/assets/products/hats/images-2.jpeg",
-    description: "A wide-brimmed straw sun hat with a cute brown bow and tiny floral accents. Ideal for beach and garden days."
+    description: "A wide-brimmed straw sun hat with a cute brown bow and tiny floral accents. Ideal for beach and garden days.",
+    hatType: "Sun Hat",
+    material: "Straw",
+    color: "Beige & Brown",
+    ssizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 2,
@@ -539,7 +822,11 @@ const products = {
     price: 599,
     salePrice: 549,
     image: "/assets/products/hats/images-3.jpeg",
-    description: "Soft lilac bucket hat made from breathable cotton. A pastel accessory that complements casual summer looks."
+    description: "Soft lilac bucket hat made from breathable cotton. A pastel accessory that complements casual summer looks.",
+    hatType: "Bucket Hat",
+    material: "Cotton",
+    color: "Lilac",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 3,
@@ -547,7 +834,11 @@ const products = {
     price: 749,
     salePrice: 699,
     image: "/assets/products/hats/images-4.jpeg",
-    description: "Sporty sky blue golf cap with UV protection. Lightweight and stylish for active days outdoors."
+    description: "Sporty sky blue golf cap with UV protection. Lightweight and stylish for active days outdoors.",
+    hatType: "Golf Hat",
+    material: "Polyester",
+    color: "Sky Blue",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 4,
@@ -555,7 +846,11 @@ const products = {
     price: 999,
     salePrice: 949,
     image: "/assets/products/hats/images-5.jpeg",
-    description: "Elegant brown fedora featuring a sleek black band. Perfect for formal styling or smart-casual looks."
+    description: "Elegant brown fedora featuring a sleek black band. Perfect for formal styling or smart-casual looks.",
+    hatType: "Fedora",
+    material: "Wool Blend",
+    color: "Brown & Black",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 5,
@@ -563,7 +858,11 @@ const products = {
     price: 1099,
     salePrice: 999,
     image: "/assets/products/hats/images-6.jpeg",
-    description: "Classic cream Panama hat with a bold black ribbon—ideal for sunny travel adventures and brunches."
+    description: "Classic cream Panama hat with a bold black ribbon—ideal for sunny travel adventures and brunches.",
+    hatType: "Panama",
+    material: "Straw",
+    color: "Cream & Black",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 6,
@@ -571,7 +870,11 @@ const products = {
     price: 649,
     salePrice: 599,
     image: "/assets/products/hats/images-7.jpeg",
-    description: "Trendy purple bucket hat with BROTHERS branding. A standout choice for youthful, edgy streetwear."
+    description: "Trendy purple bucket hat with BROTHERS branding. A standout choice for youthful, edgy streetwear.",
+    hatType: "Bucket Hat",
+    material: "Cotton Blend",
+    color: "Purple",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 7,
@@ -579,7 +882,11 @@ const products = {
     price: 899,
     salePrice: 849,
     image: "/assets/products/hats/images-8.jpeg",
-    description: "Natural woven fedora with a thin maroon band. A blend of rustic charm and timeless fashion."
+    description: "Natural woven fedora with a thin maroon band. A blend of rustic charm and timeless fashion.",
+    hatType: "Fedora",
+    material: "Woven Straw",
+    color: "Tan & Maroon",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 8,
@@ -587,7 +894,11 @@ const products = {
     price: 949,
     salePrice: 899,
     image: "/assets/products/hats/images-9.jpeg",
-    description: "Protective straw hat with a broad brim and thick crown—perfect for high-sun gardening or beach lounging."
+    description: "Protective straw hat with a broad brim and thick crown—perfect for high-sun gardening or beach lounging.",
+    hatType: "Wicker Hat",
+    material: "Straw",
+    color: "Natural Straw",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 9,
@@ -595,7 +906,11 @@ const products = {
     price: 799,
     salePrice: 749,
     image: "/assets/products/hats/images-11.jpeg",
-    description: "Navy bucket hat with subtle text accents. Sturdy and fashionable for hikes or city trips."
+    description: "Navy bucket hat with subtle text accents. Sturdy and fashionable for hikes or city trips.",
+    hatType: "Bucket Hat",
+    material: "Cotton",
+    color: "Navy Blue",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   },
   {
     id: 10,
@@ -603,19 +918,27 @@ const products = {
     price: 1049,
     salePrice: 999,
     image: "/assets/products/hats/images-12.jpeg",
-    description: "Light tan explorer hat with black details. A practical accessory for sun protection during outdoor travel."
+    description: "Light tan explorer hat with black details. A practical accessory for sun protection during outdoor travel.",
+    hatType: "Explorer Hat",
+    material: "Canvas",
+    color: "Tan & Black",
+    sizeOptions: ["Petite / Teens", "Small (Women)", "Medium (Common)", "Large (Men)", "X-Large / Loose Fit"]
   }
 ],
 
-  rings: 
-[
+
+rings: [
   {
     id: 1,
     name: "Leaf-Inspired Gold Ring",
     price: 1499,
     salePrice: 1399,
     image: "/assets/products/rings/shopping.jpeg",
-    description: "Elegant gold-plated ring shaped like delicate leaves, adorned with crystal embellishments. Nature meets glam."
+    description: "Elegant gold-plated ring shaped like delicate leaves, adorned with crystal embellishments. Nature meets glam.",
+    color: "Gold",
+    material: "Alloy",
+    sizeOptions: [5, 6, 7, 8],
+    style: "Nature-Inspired"
   },
   {
     id: 2,
@@ -623,7 +946,11 @@ const products = {
     price: 1399,
     salePrice: 1299,
     image: "/assets/products/rings/shopping-2.jpeg",
-    description: "A dainty floral ring featuring blue stones and teardrop crystals. A refreshing pop of color for any look."
+    description: "A dainty floral ring featuring blue stones and teardrop crystals. A refreshing pop of color for any look.",
+    color: "Blue & Silver",
+    material: "Brass",
+    sizeOptions: [5, 6, 7],
+    style: "Floral"
   },
   {
     id: 3,
@@ -631,7 +958,11 @@ const products = {
     price: 1599,
     salePrice: 1499,
     image: "/assets/products/rings/shopping-3.jpeg",
-    description: "Modern crossover ring in rose gold finish, lined with shimmering diamonds for an elegant twist."
+    description: "Modern crossover ring in rose gold finish, lined with shimmering diamonds for an elegant twist.",
+    color: "Rose Gold",
+    material: "Stainless Steel",
+    sizeOptions: [6, 7, 8],
+    style: "Contemporary"
   },
   {
     id: 4,
@@ -639,7 +970,11 @@ const products = {
     price: 899,
     salePrice: 849,
     image: "/assets/products/rings/shopping-4.jpeg",
-    description: "Simple and sweet open heart design in polished gold tone. A cute addition to your everyday jewelry."
+    description: "Simple and sweet open heart design in polished gold tone. A cute addition to your everyday jewelry.",
+    color: "Gold",
+    material: "Alloy",
+    sizeOptions: [5, 6, 7],
+    style: "Minimalist"
   },
   {
     id: 5,
@@ -647,7 +982,11 @@ const products = {
     price: 1699,
     salePrice: 1599,
     image: "/assets/products/rings/shopping-5.jpeg",
-    description: "Eye-catching blue rectangular gem nestled between crystal-studded petals. Fit for a queen."
+    description: "Eye-catching blue rectangular gem nestled between crystal-studded petals. Fit for a queen.",
+    color: "Blue & Gold",
+    material: "Brass",
+    sizeOptions: [6, 7, 8],
+    style: "Princess"
   },
   {
     id: 6,
@@ -655,7 +994,11 @@ const products = {
     price: 1399,
     salePrice: 1299,
     image: "/assets/products/rings/shopping-6.jpeg",
-    description: "Romantic pink rose-shaped ring with a diamond center—perfect for gifting or self-love moments."
+    description: "Romantic pink rose-shaped ring with a diamond center—perfect for gifting or self-love moments.",
+    color: "Pink & Silver",
+    material: "Alloy",
+    sizeOptions: [5, 6, 7],
+    style: "Romantic"
   },
   {
     id: 7,
@@ -663,7 +1006,11 @@ const products = {
     price: 1099,
     salePrice: 999,
     image: "/assets/products/rings/shopping-7.jpeg",
-    description: "Contemporary twin-band design in rose gold with diamond accents—sophisticated and versatile."
+    description: "Contemporary twin-band design in rose gold with diamond accents—sophisticated and versatile.",
+    color: "Rose Gold",
+    material: "Alloy",
+    sizeOptions: [6, 7, 8, 9],
+    style: "Band"
   },
   {
     id: 8,
@@ -671,7 +1018,11 @@ const products = {
     price: 1199,
     salePrice: 1099,
     image: "/assets/products/rings/shopping-8.jpeg",
-    description: "Black crystal eternity band with golden base—bold, modern, and perfectly stackable."
+    description: "Black crystal eternity band with golden base—bold, modern, and perfectly stackable.",
+    color: "Black & Gold",
+    material: "Alloy",
+    sizeOptions: [6, 7, 8],
+    style: "Eternity"
   },
   {
     id: 9,
@@ -679,7 +1030,11 @@ const products = {
     price: 1499,
     salePrice: 1399,
     image: "/assets/products/rings/shopping-9.jpeg",
-    description: "Delicate butterfly design with ruby red stones and diamonds. A blend of whimsy and elegance."
+    description: "Delicate butterfly design with ruby red stones and diamonds. A blend of whimsy and elegance.",
+    color: "Ruby Red & Silver",
+    material: "Alloy",
+    sizeOptions: [5, 6, 7],
+    style: "Butterfly"
   },
   {
     id: 10,
@@ -687,19 +1042,27 @@ const products = {
     price: 1999,
     salePrice: 1899,
     image: "/assets/products/rings/images-2.jpeg",
-    description: "Stunning deep blue sapphire center surrounded by a halo of diamonds. Statement luxury at its best."
+    description: "Stunning deep blue sapphire center surrounded by a halo of diamonds. Statement luxury at its best.",
+    color: "Blue & Silver",
+    material: "Brass",
+    sizeOptions: [6, 7, 8],
+    style: "Halo"
   }
 ],
 
-  watches: 
-[
+
+watches: [
   {
     id: 1,
     name: "Plum Luxe Watch",
     price: 2299,
     salePrice: 2099,
     image: "/assets/products/watches/images-2.jpeg",
-    description: "Elegant plum dial with a gold-tone case and leather strap. Perfect for evening wear and formal looks."
+    description: "Elegant plum dial with a gold-tone case and leather strap. Perfect for evening wear and formal looks.",
+    color: "Plum & Gold",
+    strapType: "Leather",
+    material: "Stainless Steel & Leather",
+
   },
   {
     id: 2,
@@ -707,7 +1070,11 @@ const products = {
     price: 1499,
     salePrice: 1399,
     image: "/assets/products/watches/images-3.jpeg",
-    description: "Vibrant orange analog sport watch. Lightweight and bold — ideal for casual and active wear."
+    description: "Vibrant orange analog sport watch. Lightweight and bold — ideal for casual and active wear.",
+    color: "Orange",
+    strapType: "Rubber",
+    material: "Silicone & Resin",
+
   },
   {
     id: 3,
@@ -715,7 +1082,11 @@ const products = {
     price: 1999,
     salePrice: 1899,
     image: "/assets/products/watches/images-4.jpeg",
-    description: "Minimalist icy blue dial with stainless steel mesh strap. Chic and contemporary."
+    description: "Minimalist icy blue dial with stainless steel mesh strap. Chic and contemporary.",
+    color: "Ice Blue",
+    strapType: "Mesh",
+    material: "Stainless Steel",
+
   },
   {
     id: 4,
@@ -723,7 +1094,11 @@ const products = {
     price: 2399,
     salePrice: 2299,
     image: "/assets/products/watches/images-5.jpeg",
-    description: "Luxury chain-link rose gold bracelet watch with a sleek rectangular dial."
+    description: "Luxury chain-link rose gold bracelet watch with a sleek rectangular dial.",
+    color: "Rose Gold",
+    strapType: "Bracelet Chain",
+    material: "Alloy",
+
   },
   {
     id: 5,
@@ -731,7 +1106,11 @@ const products = {
     price: 2199,
     salePrice: 2099,
     image: "/assets/products/watches/images-6.jpeg",
-    description: "All-metal bronze finish with a subtle shimmer dial. Classy and sturdy."
+    description: "All-metal bronze finish with a subtle shimmer dial. Classy and sturdy.",
+    color: "Bronze",
+    strapType: "Metal Strap",
+    material: "Alloy",
+
   },
   {
     id: 6,
@@ -739,7 +1118,11 @@ const products = {
     price: 1899,
     salePrice: 1799,
     image: "/assets/products/watches/images-7.jpeg",
-    description: "Soft pink dial and strap, designed for a feminine and graceful aesthetic."
+    description: "Soft pink dial and strap, designed for a feminine and graceful aesthetic.",
+    color: "Blush Pink",
+    strapType: "Faux Leather",
+    material: "Synthetic Leather & Alloy",
+
   },
   {
     id: 7,
@@ -747,7 +1130,11 @@ const products = {
     price: 2499,
     salePrice: 2399,
     image: "/assets/products/watches/images-8.jpeg",
-    description: "Midnight black dial with a golden mesh strap — a luxurious timepiece for every occasion."
+    description: "Midnight black dial with a golden mesh strap — a luxurious timepiece for every occasion.",
+    color: "Black & Gold",
+    strapType: "Mesh",
+    material: "Stainless Steel",
+
   },
   {
     id: 8,
@@ -755,7 +1142,11 @@ const products = {
     price: 1799,
     salePrice: 1699,
     image: "/assets/products/watches/images-9.jpeg",
-    description: "Sleek silver-tone steel body with a deep black dial. Clean and bold."
+    description: "Sleek silver-tone steel body with a deep black dial. Clean and bold.",
+    color: "Steel & Black",
+    strapType: "Metal Bracelet",
+    material: "Stainless Steel",
+
   },
   {
     id: 9,
@@ -763,7 +1154,11 @@ const products = {
     price: 1299,
     salePrice: 1199,
     image: "/assets/products/watches/images-10.jpeg",
-    description: "Old-school gold digital Casio-style watch with multifunction display. A timeless retro pick."
+    description: "Old-school gold digital Casio-style watch with multifunction display. A timeless retro pick.",
+    color: "Gold",
+    strapType: "Metal Chain",
+    material: "Alloy",
+
   },
   {
     id: 10,
@@ -771,9 +1166,14 @@ const products = {
     price: 1999,
     salePrice: 1899,
     image: "/assets/products/watches/images-12.jpeg",
-    description: "Rose gold case with black dial and strap — modern simplicity with a luxe edge."
+    description: "Rose gold case with black dial and strap — modern simplicity with a luxe edge.",
+    color: "Black & Rose Gold",
+    strapType: "Synthetic Leather",
+    material: "Alloy & PU",
+
   }
 ]
+
 };
 
 export default products;
